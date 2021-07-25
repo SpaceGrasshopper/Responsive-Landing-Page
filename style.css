@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    background-color: black;
+    color:grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vh;
+    font-weight: 400;
+}
+#header img{
+    max-height: 55vh;
+}
+#topImage,main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#nav-bar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 5px solid red;
+}
+.araa{
+    border: 4px solid white; 
+    background-color:black;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 2vh;
+}
+ul li{
+    list-style-type: none;
+}
+ul a{
+    color: red;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 5vh;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+    border: 2px solid orangered;
+}
+#email{
+    border: 2px groove red;
+    border-radius: 8px;
+    color: black;
+}
+#email::placeholder{
+    color: black;
+}
+#submit{
+    border: 2px groove red;
+    border-radius: 2px;
+    color: grey;
+}
+section{
+    border:2px solid springgreen;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 250px;
+}
+section div{
+    border:2px solid springgreen;
+}
+aside{
+    width: 45%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border:2px double springgreen;
+}
+@media screen and (max-width: 600px) {
+    section{
+        flex-direction: column;
+    }
+    .araa{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+}
